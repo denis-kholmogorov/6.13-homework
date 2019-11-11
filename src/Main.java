@@ -33,7 +33,7 @@ public class Main {
 
         ArrayList<Employee> maxSalary = company.getTopSalaryStaff(10);
         for (Employee man: maxSalary){
-            System.out.println(man.getMonthSalary() + " у.е. ");
+            System.out.println(man.getMonthSalary() + " у.е.");
         }
 
         System.out.println("\nСотрудники с минимальной зарплатой - ");
