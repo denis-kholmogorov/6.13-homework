@@ -29,7 +29,7 @@ public class Company {
     }
 
     public ArrayList<Employee> getTopSalaryStaff(int count){
-        employees.sort(new ReverseSalaryComparator());
+        employees.sort(new SalaryComparator().reversed());
         for(int i = 0; i < count; i++){
             maxSalary.add(employees.get(i));
         }
