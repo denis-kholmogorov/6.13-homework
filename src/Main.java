@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         Company company = new Company(20000000);
-
+        int incomeCompany = Company.getIncome();
         int salary;
         int sales;
 
@@ -25,7 +25,7 @@ public class Main {
 
         for (int i = 0; i < 90; i++){
             salary = (int)(40000 + Math.random() * 200000);
-            company.acceptEmployee(new TopManager(salary));
+            company.acceptEmployee(new TopManager(salary, incomeCompany));
         }
         System.out.println("Количество сотрудников - " + company.getCountEmployee());
 
