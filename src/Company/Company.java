@@ -1,12 +1,11 @@
 package Company;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Company {
 
     private static int income;
-    private ArrayList<Employee> minSalary = new ArrayList<Employee>();
-    private ArrayList<Employee> maxSalary = new ArrayList<Employee>();
     private ArrayList<Employee> employees = new ArrayList<Employee>();
 
     public Company(int income){
@@ -28,20 +27,14 @@ public class Company {
         employees.remove(employee);
     }
 
-    public ArrayList<Employee> getTopSalaryStaff(int count){
+    public List<Employee> getTopSalaryStaff(int count){
         employees.sort(new SalaryComparator().reversed());
-        for(int i = 0; i < count; i++){
-            maxSalary.add(employees.get(i));
-        }
-        return maxSalary;
+        return employees.subList(0, count);
     }
 
-    public ArrayList<Employee> getLowestSalaryStaff(int count){
+    public List<Employee> getLowestSalaryStaff(int count){
         employees.sort(new SalaryComparator());
-        for(int i = 0; i < count; i++){
-            minSalary.add(employees.get(i));
-        }
-        return minSalary;
+        return employees.subList(0, count);
     }
 
     public int getCountEmployee(){

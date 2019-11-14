@@ -1,3 +1,5 @@
+package Company;
+
 import Company.Employee;
 
 public class SalesManager implements Employee {

@@ -1,7 +1,5 @@
-import Company.Company;
-import Company.Employee;
-
-import java.util.ArrayList;
+import Company.*;
+import java.util.List;
 
 public class Main {
 
@@ -31,14 +29,14 @@ public class Main {
 
         System.out.println("Сотрудники с максималльной зарплатой - ");
 
-        ArrayList<Employee> maxSalary = company.getTopSalaryStaff(10);
+        List<Employee> maxSalary = company.getTopSalaryStaff(10);
         for (Employee man: maxSalary){
             System.out.println(man.getMonthSalary() + " у.е.");
         }
 
         System.out.println("\nСотрудники с минимальной зарплатой - ");
 
-        ArrayList<Employee> minSalary = company.getLowestSalaryStaff(10);
+        List<Employee> minSalary = company.getLowestSalaryStaff(10);
         for (Employee man: minSalary){
             System.out.println(man.getMonthSalary() + " у.е.");
         }

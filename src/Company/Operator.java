@@ -1,7 +1,7 @@
-import Company.Employee;
+package Company;
+
 
 public class Operator implements Employee {
-
     private int salary;
 
     public Operator(int salary){
