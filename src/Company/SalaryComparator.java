@@ -1,7 +1,4 @@
 package Company;
-
-import Company.Employee;
-
 import java.util.Comparator;
 
 public class SalaryComparator implements Comparator<Employee> {

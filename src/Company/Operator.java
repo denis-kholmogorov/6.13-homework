@@ -1,6 +1,5 @@
 package Company;
 
-
 public class Operator implements Employee {
     private int salary;
 

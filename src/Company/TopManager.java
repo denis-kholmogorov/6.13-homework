@@ -1,7 +1,5 @@
 package Company;
 
-import Company.Employee;
-
 public class TopManager implements Employee {
 
     private int salary;
