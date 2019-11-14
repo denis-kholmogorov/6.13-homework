@@ -6,7 +6,7 @@ import java.util.List;
 public class Company {
 
     private static int income;
-    private ArrayList<Employee> employees = new ArrayList<Employee>();
+    private List<Employee> employees = new ArrayList<Employee>();
 
     public Company(int income){
         if(income >= 0) {
